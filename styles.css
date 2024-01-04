@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to bottom right, #4CAF50, #2196F3);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  background: url('images/tic2.gif') no-repeat center center fixed ;
+  background-size: cover;
+  
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #abd0f7;
+  border: 2px solid #0056b3;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.cell:hover {
+  background: #004080;
+}
+
+.message {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.restart-button {
+  background-color: #2952f6;
+  color: #fbf5f5;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.restart-button:hover {
+  background-color: #004080;
+}
+
+.winner {
+  background: #59c3e9;
+}
+a{
+  text-decoration: none;
+}
+h1:hover{
+  color: #ee8e12;
+}

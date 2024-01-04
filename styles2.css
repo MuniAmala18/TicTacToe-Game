@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('images/tic.gif') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 5s ease-in-out;
+    opacity: 0.;
+
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease-in-out;
+  }
+  
+  p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 40px;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  a {
+    color: #ffaa4c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #f18407;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  button{
+    color: black;
+    padding: 10px 10px;
+    background: #ffaa4c;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+  }
+  button:hover{
+    background: #f18407;
+    color: antiquewhite;
+  }
+  
